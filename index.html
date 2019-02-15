@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/united/bootstrap.min.css"
+    />
+    <title>Recipe Finder</title>
+  </head>
+  <body>
+    <nav class="navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbar-brand">Recipe Finder</div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h3 class="text-center">Search For Recipe By Ingredient</h3>
+        <div class="row">
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="search-recipe"
+              class="form-control"
+              placeholder="apple, meat, etc."
+            />
+          </div>
+
+          <div class="col-md-2">
+            <button id="search-button" class="btn btn-primary btn-block">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="recipe-list"
+      class="container d-flex flex-wrap justify-content-around"
+    ></div>
+  </body>
+  <script src="app.js"></script>
+  <script src="ui.js"></script>
+</html>
